@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url('../images/cork-wallet.png') 0 0 repeat;
+  border-top: 3px solid #ddd;
+  color: #777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 2;
+}
+
+.title {
+  background-color: #4aaaa5;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-container, .container {
+  margin: 0 auto;
+  margin-left: 50px;
+}
+
+.placeholder {
+  float: left;
+  margin-right: 20px;
+}
+
+.portfolio-item {
+  float: left;
+  width: calc(50% - 10px);
+  margin: auto 10px 50px auto;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+}
+
+.portfolio-title {
+  background: #4aaaa5;
+  border-bottom: none;
+  color: #fff;
+  margin-top: -80px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+
+h1 ,h2, h3, h4 {
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+h2, h3, h4, header {
+    border-bottom: 2px solid #ccc;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+header {
+   background-color: #fff;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+nav {
+  width: 25%;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+section, aside {
+  background-color: #fff;
+  padding: 30px;
+}
+
+section {
+  width: 650px;
+  float: left;
+}
+
+aside img {
+  width: calc((100% - 10px) / 3);
+}
+
+aside {
+  float: right;
+  width: 270px;
+}
+
+input, label {
+  display: block;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+textarea {
+  border-color: #ccc;
+  height: 200px;
+}
+
+input[type="button"] {
+  background-color: #4aaaa5;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px;
+  width: 150px;
+}
+
+footer {
+  background-color: #666;
+  border-top: 8px solid #4aaaa5;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+     
+    }   
+    .placeholder {
+          height: 100%; 
+          width: 100%; 
+          object-fit: contain;
+      }
+
+      .container {
+        width: 70%;
+      }
+
+
+}
+
+@media screen and (max-width: 768px) {
+     .connect{
+        width: 650px;
+        float: left;
+        margin-top: 40px;
+      }
+
+      .links {
+        width: 60px;
+        height: 60px;
+      }
+
+      .placeholder {
+        width: 300px;
+        height: 300px;
+      }
+}
+
+@media screen and (max-width: 640px) {
+    .placeholder {
+          height: 100%; 
+          width: 100%; 
+          object-fit: contain;
+    }
+
+    .flex-container {
+      max-width: 640px;
+      flex-direction: column;
+
+    }
+
+    .title {
+      max-width: 640px;
+      width: 100%;
+      position: static;
+      text-align: center;
+    }
+
+    .main-nav {
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .about {
+       max-width: 95%;
+       box-sizing: content-box;
+    }
+
+    .connect {
+      max-width: 95%;
+      box-sizing: content-box;
+    }
+    
+}
